@@ -13,11 +13,12 @@
 
 <body>
     <a-scene>
-      <a-assets>
-          <a-asset-item id="DartsModel" src="darts.gltf" scale="5 5 5"></a-asset-item>
-        </a-assets>
         <a-entity oculus-go-controls="hand: right"></a-entity>
 
+      <a-assets>
+          <a-asset-item id="DartsModel" src="darts.gltf" ></a-asset-item>
+        </a-assets>
+        <a-entity gltf-model="#DartsModel" modify-materials rotation="0 -90 0"></a-entity>
         <a-plane position="0 0 0" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
         <a-light type="point" color="white" position="0 10 0"></a-light>
         <a-sky color="#6EBAA7"></a-sky>
